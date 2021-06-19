@@ -1,0 +1,23 @@
+.dialogs-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  border-top: 1px solid #2C2C2C;
+  border-bottom: 1px solid #2C2C2C;
+
+  padding: 20px 20px 20px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.dialogs-user:hover {
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.dialogs-user-img {
+  background: url('../../../images/kendall.jpg');
+  background-size: 100%;
+  margin-right: 30px;
+}
