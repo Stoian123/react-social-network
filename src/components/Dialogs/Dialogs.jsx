@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dialogs.css';
+import Users from './Users/Users';
 
 const Dialogs = () => {
   return (
@@ -10,37 +11,12 @@ const Dialogs = () => {
 
       <div className="dialogs-container section">
         <div className="dialogs-left">
-
-          <div className="dialogs-user">
-            <div className="dialogs-user-img small-img"></div>
-            <span className='dialogs-user-name'>Masha</span>
-          </div>
-
-          <div className="dialogs-user">
-            <div className="dialogs-user-img small-img"></div>
-            <span className='dialogs-user-name'>Kendall</span>
-          </div>
-
-          <div className="dialogs-user">
-            <div className="dialogs-user-img small-img"></div>
-            <span className='dialogs-user-name'>Amanda</span>
-          </div>
-
-          <div className="dialogs-user">
-            <div className="dialogs-user-img small-img"></div>
-            <span className='dialogs-user-name'>John</span>
-          </div>
-
-          <div className="dialogs-user">
-            <div className="dialogs-user-img small-img"></div>
-            <span className='dialogs-user-name'>Jessica</span>
-          </div>
-
-          <div className="dialogs-user">
-            <div className="dialogs-user-img small-img"></div>
-            <span className='dialogs-user-name'>Emma</span>
-          </div>
-          
+          <Users name='Masha' />
+          <Users name='Kendall' />
+          <Users name='Amanda' />
+          <Users name='John' />
+          <Users name='Jessica' />
+          <Users name='Emma' />
         </div>
 
         <div className="dialogs-right">
