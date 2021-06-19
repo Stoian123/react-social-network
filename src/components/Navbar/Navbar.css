@@ -1,0 +1,84 @@
+.page-right {
+  width: 23%;
+  min-height: 100%;
+
+  box-sizing: border-box;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 50px;
+  width: 100%;
+  min-height: 100%;
+}
+
+.navbar {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.navbar-logo {
+  width: 160px;
+  background-color: #F8FF13;
+  height: 152px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo-text {
+  font-size: 56px;
+  color: #000000;
+  font-family: 'Rock Salt', sans-serif;
+}
+
+.navbar-logo:hover {
+  opacity: .7;
+  transition: all .2s ease-in;
+}
+
+.menu ul {
+  margin-top: 80px;
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.menu ul li {
+  margin-top: 10px;
+}
+
+.menu ul li a:hover {
+  color: #F8FF13;
+  opacity: .6;
+}
+
+.active {
+  color: #F8FF13;
+}
+
+.navbar-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: .3;
+}
+
+.navbar-message-text {
+  transform: rotate(-270deg);
+  width: max-content;
+}
