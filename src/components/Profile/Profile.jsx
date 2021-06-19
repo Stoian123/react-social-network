@@ -9,7 +9,7 @@ const Profile = () => {
   return (
     <div className='profile'>
       <ProfileBackground />
-      <div className='profile-wrapper'>
+      <div className='wrapper'>
         <ProfileInfo />
         <ProfileAddPosts />
         <ProfilePosts />
