@@ -1,0 +1,39 @@
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.profile-image {
+  width: 210px;
+  height: 200px;
+  background: url('../../../images/kendall.jpg') center;
+  background-size: cover;
+}
+
+.profile-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 20px 0 0 20px;
+}
+
+.profile-bio-name {
+  margin-bottom: 20px;
+}
+
+.profile-bio-name span {
+  font-size: 34px;
+}
+
+.profile-bio-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  margin-top: 8px;
+  font-size: 18px;
+  opacity: 0.5;
+}
