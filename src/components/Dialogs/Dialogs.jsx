@@ -12,24 +12,12 @@ const Dialogs = () => {
 
       <div className="dialogs-container section">
         <div className="dialogs-left">
-          <NavLink to='/dialogs/1'>
-            <Users name='Kendall' />
-          </NavLink>
-          <NavLink to='/dialogs/2'>
-            <Users name='Amanda' />
-          </NavLink>
-          <NavLink to='/dialogs/3'>
-            <Users name='John' />
-          </NavLink>
-          <NavLink to='/dialogs/4'>
-            <Users name='Jessica' />
-          </NavLink>
-          <NavLink to='/dialogs/5'>
-            <Users name='Emma' />
-          </NavLink>
-          <NavLink to='/dialogs/6'>
-            <Users name='Masha' />
-          </NavLink>
+            <Users name='Kendall' id='kendall'/>
+            <Users name='Amanda' id='Amanda'/>
+            <Users name='John' id='John'/>
+            <Users name='Jessica' id='Jessica'/>
+            <Users name='Emma' id='Emma'/>
+            <Users name='Masha' id='Masha'/>
         </div>
 
         <div className="dialogs-right">
