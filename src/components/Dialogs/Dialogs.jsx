@@ -6,7 +6,7 @@ const Dialogs = () => {
   return (
     <div className='dialogs wrapper'>
       <div className='dialogs-header section'>
-        <h1 className='dialogs-title'>Dialogs</h1>
+        <h1 className='title'>Dialogs</h1>
       </div>
 
       <div className="dialogs-container section">
