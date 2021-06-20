@@ -11,15 +11,15 @@ const Navbar = () => {
           </div>
           <nav className='menu'>
             <ul>
-              <li><a className='active' href="#">Profile</a></li>
-              <li><a href="#">Message</a></li>
+              <li><a className='active' href='/profile'>Profile</a></li>
+              <li><a href="/dialogs">Dialogs</a></li>
             </ul>
             <ul>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Music</a></li>
+              <li><a href="/news">News</a></li>
+              <li><a href="/music">Music</a></li>
             </ul>
             <ul>
-              <li><a href="#">Settings</a></li>
+              <li><a href="/settings">Settings</a></li>
             </ul>
           </nav>
         </div>
