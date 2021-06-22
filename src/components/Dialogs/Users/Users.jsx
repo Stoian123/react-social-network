@@ -4,7 +4,7 @@ import './Users.css';
 
 const Users = (props) => {
   let path = '/dialogs/' + props.id;
-
+  
   return (
     <NavLink to={path}>
       <div className="dialogs-user">
