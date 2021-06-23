@@ -4,9 +4,9 @@ import Users from './Users/Users';
 import Messages from './Messages/Messages'
 
 const Dialogs = (props) => {
-  const usersElements = props.users
+  const usersElements = props.state.users
     .map( u => <Users name={u.name} id={u.id}/>)
-  const messagesElements = props.messages
+  const messagesElements = props.state.messages
     .map( m => <Messages message={m.message} />)
 
   return (
