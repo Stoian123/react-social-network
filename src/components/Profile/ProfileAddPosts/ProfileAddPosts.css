@@ -11,10 +11,8 @@
 .profile-form-add input, button {
   background-color: inherit;
   border: 0;
-  /* margin-bottom: 20px; */
   outline: none;
   padding: 10px;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -33,4 +31,5 @@
   text-align: center;
   border-left: .13889vw solid #fff;
   opacity: .5;
+  text-transform: uppercase;
 }

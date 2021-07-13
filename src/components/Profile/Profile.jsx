@@ -10,7 +10,8 @@ const Profile = (props) => {
       <ProfileBackground />
       <div className='wrapper'>
         <ProfileInfo />
-        <ProfileAddPosts />
+        <ProfileAddPosts addPost={props.addPost} newPostText={props.state.newPostText}
+          updateNewPostText={props.updateNewPostText} />
         <ProfilePosts posts={props.state.posts} />
       </div>
     </div>
