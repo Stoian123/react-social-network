@@ -1,19 +1,17 @@
 import React from 'react';
+import { addPostActionCreator, updateNewPostTextActionCreator } from '../../redux/state';
 import './ProfileAddPosts.css';
 
 const ProfileAddPosts = (props) => {
   const newPostElement = React.createRef();
 
   const addPost = () => {
-    props.dispatch({type: 'ADD-POST'});
+    props.dispatch(addPostActionCreator());
   };
 
   const onPostChange = () => {
     let text = newPostElement.current.value;
-    let action = {
-      type: 'UPDATE-NEW-POST-TEXT',
-      newText: text
-    }
+    let action = updateNewPostTextActionCreator(text);
     props.dispatch(action);
   };
 

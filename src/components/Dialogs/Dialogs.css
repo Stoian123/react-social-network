@@ -13,4 +13,32 @@
 
 .dialogs-right {
   width: 75%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dialogs-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: .13889vw solid #fff;
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.dialogs-form input {
+  background-color: inherit;
+  border: none;
+  width: 75%;
+  outline: none;
+}
+
+.dialogs-form button {
+  width: 25%;
+  text-align: center;
+  border-left: .13889vw solid #fff;
+  text-transform: uppercase;
 }

@@ -2,12 +2,25 @@ import React from 'react';
 import './Dialogs.css';
 import Users from './Users/Users';
 import Messages from './Messages/Messages'
+import { sendMessageCreator, updateNewMessageBodyCreator } from '../redux/state';
 
 const Dialogs = (props) => {
-  const usersElements = props.state.users
-    .map( u => <Users name={u.name} id={u.id}/>)
-  const messagesElements = props.state.messages
-    .map( m => <Messages message={m.message} />)
+  const state = props.store.getState().dialogsPage;
+
+  const usersElements = state.users
+    .map( u => <Users name={u.name} id={u.id}/>);
+  const messagesElements = state.messages
+    .map( m => <Messages message={m.message} />);
+
+  const newMessageBody = state.newMessageBody;
+
+  const onSendMessageClick = () => {
+    props.store.dispatch(sendMessageCreator());
+  };
+  const onNewMessageChange = e => {
+    let body = e.target.value;
+    props.store.dispatch(updateNewMessageBodyCreator(body));
+  };
 
   return (
     <div className='dialogs wrapper'>
@@ -19,7 +32,16 @@ const Dialogs = (props) => {
           { usersElements }
         </div>
         <div className="dialogs-right">
-          { messagesElements }
+          <div>
+            { messagesElements }
+          </div>
+          <div className="dialogs-form">
+            <input value={newMessageBody} type="text" 
+              placeholder='Your message...'
+              onChange={onNewMessageChange}
+            />
+            <button onClick={onSendMessageClick}>Send</button>
+          </div>
         </div>
       </div>
     </div>
